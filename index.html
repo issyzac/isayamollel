@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Isaya Mollel</title>
+  <meta name="description" content="Isaya Mollel is a software engineer and digital health leader in Tanzania, working on community health systems, health data governance and AI in health.">
+  <meta name="color-scheme" content="light dark">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Isaya Mollel">
+  <meta property="og:description" content="Software engineer and digital health leader in Tanzania.">
+  <meta property="og:url" content="https://isayamollel.com">
+  <meta property="og:image" content="https://isayamollel.com/images/isaya-share.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="/fonts/lato-latin-900-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/src/styles.css">
+  <script>
+    /* Apply the saved theme before first paint, so the page does not flash.
+       This must stay a plain inline script. The theme switch itself lives in src/theme.ts. */
+    try { var t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+  <script type="module" src="/src/main.ts"></script>
+</head>
+<body>
+  <!--
+    Placeholders are highlighted yellow (class="tbc"). Replace or delete every one before publishing:
+      grep -n 'class="tbc"' index.html
+    "npm run build:release" refuses to build while any placeholder is left.
+    The CV buttons download public/Isaya-Mollel-CV.pdf. To update the CV, replace that file and keep the name.
+    Swahili text lives in each element's data-sw attribute. The EN/SW button swaps it in.
+  -->
+  <a class="skip" href="#top" data-sw="Ruka hadi maudhui">Skip to content</a>
+
+  <header class="bar">
+    <div class="bar__in">
+      <a class="bar__brand" href="#top">Isaya Mollel</a>
+      <nav class="bar__nav" aria-label="Main">
+        <a href="#about" data-sw="Kuhusu">About</a>
+        <a href="#focus" data-sw="Maeneo">Focus</a>
+        <a href="#experience" data-sw="Uzoefu">Experience</a>
+        <a href="#work" data-sw="Kazi">Work</a>
+        <a href="#contact" data-sw="Mawasiliano">Contact</a>
+      </nav>
+      <div class="bar__tools">
+        <button type="button" class="pill" id="lang-btn" aria-label="Badilisha lugha kuwa Kiswahili" data-sw-label="Switch language to English"><span data-sw="EN">SW</span></button>
+        <button type="button" class="round" id="theme-btn" aria-label="Switch light or dark mode" data-sw-label="Badilisha mwanga au giza">
+          <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero__text">
+        <p class="hero__eyebrow" data-sw="Afya ya kidijitali · Tanzania">Digital health · Tanzania</p>
+        <h1>Isaya Mollel</h1>
+        <p class="hero__title" data-sw="Meneja wa Teknolojia na Takwimu, D-tree International">Technology and Data Manager, D-tree International</p>
+        <p class="hero__tagline" data-sw="Mhandisi wa programu na kiongozi wa afya ya kidijitali nchini Tanzania, anayefanya kazi kwenye mifumo ya afya ya jamii, usimamizi wa takwimu za afya na AI katika afya.">Software engineer and digital health leader in Tanzania, working on community health systems, health data governance and AI in health.</p>
+        <div class="hero__actions">
+          <a class="btn" href="/Isaya-Mollel-CV.pdf" download>
+            <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+            <span data-sw="Pakua CV">Download CV</span>
+          </a>
+          <a class="btn btn--ghost" href="#contact" data-sw="Wasiliana">Contact</a>
+        </div>
+      </div>
+      <img class="avatar" src="/images/isaya.jpg" width="200" height="200" alt="Isaya Mollel, smiling, in glasses">
+    </section>
+
+    <section class="sec" id="about" aria-labelledby="about-h">
+      <h2 id="about-h" data-sw="Kuhusu">About</h2>
+      <div class="prose">
+        <p data-sw="Mimi ni mhandisi wa programu na kiongozi wa afya ya kidijitali nchini Tanzania. Kazi yangu inaunganisha teknolojia na afya ya jamii: mifumo ambayo wahudumu wa afya hutumia kila siku, kanuni zinazolinda takwimu za afya, na matumizi makini ya AI.">I am a software engineer and digital health leader based in Tanzania. My work sits where technology meets community health: the systems health workers use every day, the rules that keep health data safe, and the careful use of AI.</p>
+        <p class="muted" data-sw="Nina uzoefu wa zaidi ya miaka 10 katika uendelezaji wa programu, ikiwemo zaidi ya miaka 7 katika D-tree International nchini Tanzania. Ninaongoza kazi za teknolojia na takwimu za D-tree nchini Tanzania na kuratibu uhandisi katika ofisi za nchi za D-tree. Ninafanya kazi na Wizara ya Afya, vitengo vya TEHAMA vya serikali, mashirika yasiyo ya kiserikali na washirika wa teknolojia kubuni, kujenga na kuendesha mifumo ya kidijitali ya afya ya jamii.">I have more than 10 years in software development, including over 7 years at D-tree International in Tanzania. I lead D-tree's technology and data work in Tanzania and coordinate engineering across D-tree's country offices. I work with the Ministry of Health, government ICT units, NGOs and technology partners to design, build and run digital community health systems.</p>
+        <p class="muted" data-sw="Lugha: Kiingereza na Kiswahili, zote kwa kiwango cha kitaaluma, kuzungumza na kuandika.">Languages: English and Kiswahili, both at full professional level, spoken and written.</p>
+      </div>
+    </section>
+
+    <section class="sec" id="focus" aria-labelledby="focus-h">
+      <h2 id="focus-h" data-sw="Maeneo ya kazi">Focus areas</h2>
+      <div class="grid grid--focus">
+        <div class="card card--surface">
+          <div class="card__bar" aria-hidden="true"></div>
+          <h3 data-sw="Mifumo ya afya ya kidijitali">Digital health systems</h3>
+          <p data-sw="Mahitaji, usanifu, ujenzi, usambazaji na usaidizi wa programu tumizi za simu na wavuti na dashibodi kwa afya ya jamii.">Requirements, design, build, deployment and support of mobile and web apps and dashboards for community health.</p>
+        </div>
+        <div class="card card--surface">
+          <div class="card__bar" aria-hidden="true"></div>
+          <h3 data-sw="Usimamizi wa takwimu za afya">Health data governance</h3>
+          <p data-sw="Ubora, usalama, faragha na uwezo wa kubadilishana takwimu kwa takwimu za afya za kitaifa na za jamii.">Data quality, security, privacy and interoperability for national and community health data.</p>
+        </div>
+        <div class="card card--surface">
+          <div class="card__bar" aria-hidden="true"></div>
+          <h3 data-sw="AI katika afya">AI in health</h3>
+          <p data-sw="Kuchunguza AI ya jadi na AI ya kuzalisha maudhui (generative AI) ili kuboresha utendaji wa mfumo wa afya, ushiriki wa wateja na ufanisi.">Exploring traditional and generative AI to improve health system performance, client engagement and efficiency.</p>
+        </div>
+        <div class="card card--surface">
+          <div class="card__bar" aria-hidden="true"></div>
+          <h3 data-sw="Ushirikiano na serikali na washirika">Government and partner engagement</h3>
+          <p data-sw="Kuiwakilisha D-tree kama kiongozi wa teknolojia kwa Wizara ya Afya, vitengo vya TEHAMA vya serikali, washirika wa maendeleo na watoa huduma wa majukwaa.">Represents D-tree as technology lead with the Ministry of Health, government ICT units, development partners and platform providers.</p>
+        </div>
+        <div class="card card--surface">
+          <div class="card__bar" aria-hidden="true"></div>
+          <h3 data-sw="Uongozi wa timu">Team leadership</h3>
+          <p data-sw="Kusimamia na kuwashauri wahandisi, kupanga na kugawa rasilimali katika ofisi za nchi mbalimbali.">Supervising and mentoring engineers, planning and resource allocation across country offices.</p>
+        </div>
+        <div class="card card--surface">
+          <div class="card__bar" aria-hidden="true"></div>
+          <h3 data-sw="Usanifu wa programu na maendeleo ya biashara">Program design and business development</h3>
+          <p data-sw="Mchango wa kiufundi kwenye usanifu wa programu na mapendekezo ya miradi kuhusu teknolojia, takwimu na AI.">Technical input to program design and to proposals on technology, data and AI.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec" id="experience" aria-labelledby="exp-h">
+      <h2 id="exp-h" data-sw="Uzoefu">Experience</h2>
+      <ol class="timeline">
+        <li>
+          <span class="timeline__dot" aria-hidden="true"></span>
+          <p class="timeline__years" data-sw="Januari 2026 – sasa">January 2026 – present</p>
+          <h3>D-tree International</h3>
+          <p class="timeline__role" data-sw="Meneja wa Teknolojia na Takwimu · Dar es Salaam">Technology and Data Manager · Dar es Salaam</p>
+          <ul class="timeline__list">
+            <li data-sw="Kiungo kikuu kati ya timu ya teknolojia ya kimataifa ya D-tree na Mkurugenzi wa Programu. Kuiwakilisha D-tree kwenye majukwaa yanayohusisha idara na nchi mbalimbali.">Main link between D-tree's global tech team and the Director of Programs. Represents D-tree in cross-functional and cross-country forums.</li>
+            <li data-sw="Mjumbe wa Timu ya Menejimenti ya Juu ya D-tree Tanzania. Kuongoza kazi za kiufundi za programu za Tanzania na kuiongoza kiufundi timu ya Zanzibar.">Member of D-tree Tanzania's Senior Management Team. Leads technical work for Tanzania programs and guides the Zanzibar team.</li>
+            <li data-sw="Kuongoza usimamizi wa takwimu katika miradi iliyokabidhiwa: ubora, usalama, faragha na uwezo wa kubadilishana takwimu, pamoja na kuunganisha takwimu na dashibodi za ufuatiliaji wa programu.">Leads data governance across assigned projects: data quality, security, privacy and interoperability, plus data integration and dashboards for program monitoring.</li>
+            <li data-sw="Kujenga ushirikiano na vitengo vya TEHAMA vya serikali ili kuboresha uunganishaji wa mifumo na kuimarisha uwezo wa serikali. Kuchunguza matumizi ya AI ili kuimarisha utendaji wa mfumo wa afya, ushiriki wa wateja na ufanisi wa shirika.">Builds partnerships with government ICT units to improve system integration and strengthen government capacity. Explores AI applications to strengthen health system performance, client engagement and organisational efficiency.</li>
+            <li data-sw="Kuiwakilisha D-tree kwenye vikundi kazi vya kiufundi, mijadala na wafadhili na majukwaa ya wadau, na kuchangia mapendekezo ya miradi kuhusu teknolojia, takwimu na AI.">Represents D-tree in technical working groups, donor discussions and partner forums, and contributes to proposals on technology, data and AI.</li>
+          </ul>
+        </li>
+        <li>
+          <span class="timeline__dot" aria-hidden="true"></span>
+          <p class="timeline__years" data-sw="Januari 2024 – Desemba 2025">January 2024 – December 2025</p>
+          <h3>D-tree International</h3>
+          <p class="timeline__role" data-sw="Meneja wa Uhandisi · Dar es Salaam">Engineering Manager · Dar es Salaam</p>
+          <ul class="timeline__list">
+            <li data-sw="Kuiwakilisha D-tree kama kiongozi wa teknolojia kwenye mikutano na washirika na wawakilishi wa serikali.">Represented D-tree as technology leader in meetings with partners and government representatives.</li>
+            <li data-sw="Kusimamia timu ya uhandisi ya Tanzania, kupanga mzigo wa kazi na kusaidia mipango ya mahitaji ya rasilimali. Kusaidia ukuaji wa kitaaluma na utendaji wa wahandisi.">Supervised the Tanzania engineering team, organised workload and supported planning for resource needs. Supported the professional growth and performance of engineers.</li>
+            <li data-sw="Kufanya kazi na viongozi wa teknolojia na mameneja wa bidhaa kutoka mashirika washirika ili kuweka utekelezaji katika mwelekeo mmoja.">Worked with tech leads and product managers from partner organisations to keep delivery aligned.</li>
+          </ul>
+        </li>
+        <li>
+          <span class="timeline__dot" aria-hidden="true"></span>
+          <p class="timeline__years" data-sw="Januari 2022 – Desemba 2023">January 2022 – December 2023</p>
+          <h3>D-tree International</h3>
+          <p class="timeline__role" data-sw="Mhandisi Mkuu wa Programu, ikiwemo Mradi wa Kizazi Kijacho · Dar es Salaam">Lead Software Engineer, including the Kizazi Kijacho Project · Dar es Salaam</p>
+          <ul class="timeline__list">
+            <li data-sw="Kuongoza uhandisi wa programu kwa Mradi wa Kizazi Kijacho na mifumo mingine ya D-tree Tanzania.">Led software engineering for the Kizazi Kijacho Project and other D-tree Tanzania systems.</li>
+            <li data-sw="Kuweka na kufuatilia hatua muhimu za timu za ndani na nje zilizokuwa zikijenga vipengele vya programu.">Set and monitored milestones for internal and external teams building software components.</li>
+          </ul>
+        </li>
+        <li>
+          <span class="timeline__dot" aria-hidden="true"></span>
+          <p class="timeline__years" data-sw="Julai 2019 – Desemba 2021">July 2019 – December 2021</p>
+          <h3>D-tree International</h3>
+          <p class="timeline__role" data-sw="Mhandisi Mwandamizi wa Programu · Dar es Salaam">Senior Software Engineer · Dar es Salaam</p>
+          <ul class="timeline__list">
+            <li data-sw="Kushiriki mikutano ya mipango na uratibu na Wizara ya Afya na washirika wa maendeleo kuhusu mikakati na michakato ya mfumo wa taarifa za afya ya jamii.">Took part in planning and coordination meetings with the Ministry of Health and development partners on strategies and processes for the community health information system.</li>
+            <li data-sw="Kufanya kazi na mashirika yasiyo ya kiserikali na serikali kukusanya na kuandika mahitaji, na kuchagua teknolojia inayofaa mazingira ya hapa.">Worked with NGOs and government to gather and document requirements, and chose technology that fits the local context.</li>
+            <li data-sw="Kubuni, kujenga, kusambaza na kutunza programu tumizi za wavuti na simu pamoja na dashibodi za afya ya kidijitali. Kufanya kazi na watoa huduma wa majukwaa na wasanidi wa nje kujenga, kusanidi au kupanua zana za afya ya kidijitali, na kutathmini ubora wa kazi za washirika.">Designed, built, deployed and maintained web and mobile applications and dashboards for digital health. Worked with platform providers and external developers to build, configure or extend digital health tools, and evaluated partner delivery quality.</li>
+          </ul>
+        </li>
+        <li>
+          <span class="timeline__dot" aria-hidden="true"></span>
+          <p class="timeline__years" data-sw="Aprili 2016 – Aprili 2019">April 2016 – April 2019</p>
+          <h3>SomaApps Technologies Co. Ltd</h3>
+          <p class="timeline__role" data-sw="Mkurugenzi wa Teknolojia (CTO) na mwanzilishi mwenza, mkuu wa uundaji wa programu za simu na UI/UX · Dar es Salaam">CTO and co-founder, head of mobile app development and UI/UX · Dar es Salaam</p>
+        </li>
+        <li>
+          <span class="timeline__dot" aria-hidden="true"></span>
+          <p class="timeline__years">2014 – 2016</p>
+          <h3 data-sw="Kazi za awali">Earlier roles</h3>
+          <ul class="timeline__list">
+            <li data-sw="Msanidi Programu na Mshauri, SoftMed Company Ltd, Dar es Salaam (Desemba 2015 – Desemba 2016)">Software Developer and Consultant, SoftMed Company Ltd, Dar es Salaam (December 2015 – December 2016)</li>
+            <li data-sw="Msanidi wa Programu Tumizi, iMatic Technologies Ltd, Dar es Salaam (Agosti – Novemba 2015)">Application Developer, iMatic Technologies Ltd, Dar es Salaam (August – November 2015)</li>
+            <li data-sw="Mwanafunzi wa vitendo, Msanidi Programu (kwa mbali), FreeCode International (Januari – Julai 2015)">Intern Software Developer (remote), FreeCode International (January – July 2015)</li>
+            <li data-sw="Msaidizi wa Utafiti, mradi wa usalama wa mtandao wa UDOM–TCRA, Chuo Kikuu cha Dodoma (Februari – Juni 2015)">Research Assistant, UDOM–TCRA cyber security project, University of Dodoma (February – June 2015)</li>
+            <li data-sw="Msanidi Programu wa Mradi, mradi wa usalama barabarani wa CoICT–TCRA, Chuo Kikuu cha Dar es Salaam (Julai – Oktoba 2014)">Project Application Developer, CoICT–TCRA road safety project, University of Dar es Salaam (July – October 2014)</li>
+          </ul>
+        </li>
+      </ol>
+    </section>
+
+    <section class="sec" id="education" aria-labelledby="edu-h">
+      <h2 id="edu-h" data-sw="Elimu na vyeti">Education and certifications</h2>
+      <div class="grid grid--focus">
+        <div class="card card--surface card--slim">
+          <h3 data-sw="Shahada ya Uhandisi wa Programu (BSc Hons)">BSc (Hons) Software Engineering</h3>
+          <p data-sw="Chuo Kikuu cha Dodoma, Tanzania · 2011 – 2015">The University of Dodoma, Tanzania · 2011 – 2015</p>
+        </div>
+        <div class="card card--surface card--slim">
+          <h3 data-sw="Cheti cha Pesa za Kidijitali (Fintech)">Certificate in Digital Money (Fintech)</h3>
+          <p>The Fletcher School of Law and Diplomacy, Tufts University · 2017</p>
+        </div>
+        <div class="card card--surface card--slim">
+          <h3>Microeconomics</h3>
+          <p data-sw="Cheti">Certification</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec" id="work" aria-labelledby="work-h">
+      <h2 id="work-h" data-sw="Kazi teule">Selected work</h2>
+      <div class="grid grid--fill">
+        <div class="card card--empty">
+          <p data-sw="Miradi itaongezwa hivi karibuni.">Projects will be added soon.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec" id="ventures" aria-labelledby="ventures-h">
+      <h2 id="ventures-h" data-sw="Biashara zangu">Ventures</h2>
+      <div class="grid grid--work">
+        <div class="card card--surface card--slim">
+          <h3><a href="https://www.harakatizaenzi.com/" rel="noopener">Harakati za Enzi</a></h3>
+          <p data-sw="Kiwanda cha kuchoma kahawa maalum ya Tanzania na mkahawa jijini Dar es Salaam. Huchoma kahawa kwa uangalifu, huunda kazi zenye utu na hujenga maeneo ambapo watu wanajisikia kuwa sehemu yake.">A Tanzanian specialty coffee roastery and café in Dar es Salaam. It roasts with care, creates dignified work and builds places where people feel they belong.</p>
+        </div>
+        <div class="card card--surface card--slim">
+          <h3>SomaApps</h3>
+          <p data-sw="Mwanzilishi mwenza na CTO, Aprili 2016 hadi Aprili 2019. Niliongoza uundaji wa programu za simu na UI/UX. Ilifungwa mwaka 2019.">Co-founder and CTO, April 2016 to April 2019. I led mobile app development and UI/UX. Closed in 2019.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec sec--last" id="contact" aria-labelledby="contact-h">
+      <h2 id="contact-h" class="tight" data-sw="Mawasiliano">Contact</h2>
+      <p class="lead muted" data-sw="Njia bora ya kunifikia ni kwa barua pepe au LinkedIn.">The best way to reach me is by email or LinkedIn.</p>
+      <div class="hero__actions">
+        <a class="chip" href="mailto:imollel@d-tree.org">
+          <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+          imollel@d-tree.org
+        </a>
+        <a class="chip" href="https://www.linkedin.com/in/issyzac" rel="me noopener">
+          <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg>
+          LinkedIn
+        </a>
+        <a class="chip chip--primary" href="/Isaya-Mollel-CV.pdf" download>
+          <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+          CV (PDF)
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p>&copy; 2026 Isaya Mollel · isayamollel.com</p>
+  </footer>
+</body>
+</html>
